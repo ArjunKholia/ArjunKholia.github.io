@@ -1,31 +1,13 @@
-name: Herring Cove
-author: Herring Cove
-baseurl: /herring-cove
-description: theme for jekyll
-github: http://www.github.com/arnp
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
-location: 42°2'16"N   70°12'47"W
-disqus: diqus-username
+# Site settings
+title: AK
+email: arjun.kholia1234@gmail.com
+description: > # This is a blog dedicated to my Data Scence projects completed on Python.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "ArjunKholia.github.io" # the base hostname & protocol for your site
 
-##Make sure to edit the above fields, especially for disqus.
+github_username:  ArjunKholia
+linkedin_username:    yannelly-sanchez-a923a237
 
 
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+# Build settings
+markdown: kramdown
