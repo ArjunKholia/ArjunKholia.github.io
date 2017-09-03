@@ -1,49 +1,60 @@
 ---
-layout: page
+layout: default
 ---
 
-{% if page.image and page.headerImage %}
-    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
-{% endif %}
-
-<h1 class="title">{{ page.title }}</h1>
-
-<span class="date">
-    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
-    {% if site.read-time %} - {% include read-time.html %}{% endif %}
-</span>
-
-{% if site.show-tags %}
-    <div class="post-tags">
-        {% for tag in page.tags %}
-            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
-        {% endfor %}
+<div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	{% for category in page.categories %}
+                        	<a class="btn btn-white btn-xs" href="{{ category | downcase | prepend: '/' | prepend: site.baseurl }}">{{ category }}</a>
+                        {% endfor %}
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }}</span>
+                        <h1>
+                            {{ page.title }}
+                        </h1>
+                    </div>
+                    	{{ content }}
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                {% for tag in page.tags %}
+                                    <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
+                                {% endfor %}
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <div>
+                                {% if site.disqus %}
+                                <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
+                                {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            {% if site.donation %}
+                            {% include donate.html %}
+                            {% endif %}
+                            <br>
+                            <!-- share -->
+                            {% include share.html %}
+                            <br>
+                            <!-- comment -->
+                            {% include comments.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-{% endif %}
 
-{{content}}
-
-{% if site.post-advance-links contains page.category %}
-    <div class="blog-navigation">
-        {% if page.previous.url %}
-            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
-        {% else %}
-            <a class="prev"></a>
-        {% endif %}
-        {% if page.next.url %}
-            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
-        {% endif %}
-    </div>
-{% endif %}
-
-{% if site.related %}
-    {% include related.html %}
-{% endif %}
-
-{% if site.show-author %}
-    {% include author.html %}
-{% endif %}
-
-{% if site.disqus.categories contains page.category %}
-    {% include disqus.html %}
-{% endif %}
+</div>
