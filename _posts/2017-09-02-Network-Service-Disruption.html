@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11732,14 +11732,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11796,7 +11796,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>The dataset for this project was provided by an Australian telecom company <font color=blue>_Telstra_</font> which can be found <font color=blue>here</font> on Kaggle.</strong></p>
+<p><strong>The dataset for this project was provided by an Australian telecom company <font color=blue>Telstra</font> which can be found <font color=blue><a href="https://www.kaggle.com/c/telstra-recruiting-network/data",class="button">here</a></font> on Kaggle.</strong></p>
 <p><strong><font color=red>The Business Problem:</font> The company's network infrastructure is geographically distributed across different regions &amp; which would need repairs. Some of the service areas were in very remote areas and if service disrupts in those regions, it might take some time for tech support to fix it resulting in many of their customers without service, thus  tarnishing their reputation and losing customer. So, the goal was to fix service network areas that model predicts would fail in order to prevent the disruption.</strong></p>
 
 </div>
@@ -12348,7 +12348,7 @@ memory usage: 3.8+ MB
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">l</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of unique &#39;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s1">&#39; : &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()))</span>   
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of unique &#39;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s1">&#39; : &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()))</span>
 </pre></div>
 
 </div>
@@ -33124,7 +33124,7 @@ d5Kf3kiBAAAAAElFTkSuQmCC
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 <span class="n">l</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">l</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of unique &#39;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s1">&#39; : &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()))</span>   
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of unique &#39;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s1">&#39; : &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()))</span>
 </pre></div>
 
 </div>
@@ -33616,9 +33616,9 @@ number of unique resource_grp : 3
         <span class="c1"># append the found outlier indices for col to the list of outlier indices </span>
         <span class="n">outlier_indices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">outlier_list_col</span><span class="p">)</span>
     <span class="c1"># select observations containing more than 2 outliers</span>
-    <span class="n">outlier_indices</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">outlier_indices</span><span class="p">)</span>        
+    <span class="n">outlier_indices</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">outlier_indices</span><span class="p">)</span>
     <span class="n">multiple_outliers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">outlier_indices</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">n</span> <span class="p">)</span>
-    <span class="k">return</span> <span class="n">multiple_outliers</span>   
+    <span class="k">return</span> <span class="n">multiple_outliers</span>
 </pre></div>
 
 </div>
@@ -34001,19 +34001,19 @@ Number of features after Dimension Reduction:  798
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">modelfit</span><span class="p">(</span><span class="n">alg</span><span class="p">,</span> <span class="n">dtrain</span><span class="p">,</span> <span class="n">dtest</span><span class="p">,</span> <span class="n">performCV</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cv_folds</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
     <span class="c1">#Fit the algorithm on the data</span>
     <span class="n">alg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">dtrain</span><span class="p">,</span> <span class="n">dtest</span><span class="p">)</span>
-        
+
     <span class="c1">#Predict training set:</span>
     <span class="n">dtrain_predictions</span> <span class="o">=</span> <span class="n">alg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">dtrain</span><span class="p">)</span>
     <span class="n">dtrain_predprob</span> <span class="o">=</span> <span class="n">alg</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">dtrain</span><span class="p">)[:,</span><span class="mi">1</span><span class="p">]</span>
-    
+
     <span class="c1">#Perform cross-validation:</span>
     <span class="k">if</span> <span class="n">performCV</span><span class="p">:</span>
         <span class="n">cv_score</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">cross_val_score</span><span class="p">(</span><span class="n">alg</span><span class="p">,</span> <span class="n">dtrain</span><span class="p">,</span> <span class="n">dtest</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv_folds</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
-    
+
     <span class="c1">#Print model report:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Model Report&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy : </span><span class="si">%.4g</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">dtest</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dtrain_predictions</span><span class="p">))</span>
-    
+
     <span class="k">if</span> <span class="n">performCV</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CV Score : Mean - </span><span class="si">%.7g</span><span class="s2"> | Std - </span><span class="si">%.7g</span><span class="s2"> | Min - </span><span class="si">%.7g</span><span class="s2"> | Max - </span><span class="si">%.7g</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">cv_score</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">cv_score</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">cv_score</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">cv_score</span><span class="p">)))</span>
 </pre></div>
@@ -34087,7 +34087,7 @@ CV Score : Mean - 0.7370669 | Std - 0.004657746 | Min - 0.7297056 | Max - 0.7430
                <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
               <span class="p">}</span>
 
-<span class="n">gsearch1</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">(</span><span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span><span class="n">min_samples_split</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span><span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span><span class="n">subsample</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span> 
+<span class="n">gsearch1</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">(</span><span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span><span class="n">min_samples_split</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span><span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span><span class="n">subsample</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
 <span class="n">param_grid</span> <span class="o">=</span> <span class="n">param_test</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span><span class="n">n_jobs</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">iid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 
 <span class="n">gsearch1</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train2</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
@@ -34816,7 +34816,7 @@ RK5CYII=
   </div>
 </body>
 
- 
+
 
 
 </html>
