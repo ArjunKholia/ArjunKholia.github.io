@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11785,9 +11785,9 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>This Project is divided into 3 parts.They can be accessed from here</strong></p>
 <ol>
-<li>&lt;font color=blue&gt;Data Cleaning&lt;/font&gt;</li>
-<li>&lt;font color=blue&gt;Feature Engineering&lt;/font&gt;</li>
-<li>&lt;font color=blue&gt;Modelling&lt;/font&gt;</li>
+<li><font color=blue>Data Cleaning</font></li>
+<li><font color=blue>Feature Engineering</font></li>
+<li><font color=blue>Modelling</font></li>
 </ol>
 <p><strong>This is the second part</strong></p>
 
@@ -11798,7 +11798,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&lt;font-color=red&gt;Part-2:-Feature-Engineering&lt;/font&gt;">&lt;font color=red&gt;Part 2: Feature Engineering&lt;/font&gt;<a class="anchor-link" href="#&lt;font-color=red&gt;Part-2:-Feature-Engineering&lt;/font&gt;">&#182;</a></h2>
+<h2 id="Part-2:-Feature-Engineering"><font color=red>Part 2: Feature Engineering</font><a class="anchor-link" href="Part-2:-Feature-Engineering"></a></h2>
 </div>
 </div>
 </div>
@@ -11852,7 +11852,7 @@ div#notebook {
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
         <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">content</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
-                    
+
 <span class="c1">#Create a funtion to extract numerical variable information from content file and plot using distplot &amp; regplot</span>
 
 <span class="k">def</span> <span class="nf">info_num</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
@@ -11862,7 +11862,7 @@ div#notebook {
                 <span class="k">if</span> <span class="s1">&#39;:&#39;</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">[</span><span class="n">b</span><span class="p">]:</span>
                     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
                         <span class="nb">print</span><span class="p">(</span><span class="n">data_list</span><span class="p">[</span><span class="n">c</span><span class="p">])</span>
-                    
+
                     <span class="n">f</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">((</span><span class="mi">12</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="mi">7</span><span class="p">),</span><span class="mf">4.5</span><span class="p">))</span>
                     <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
                     <span class="n">ax1</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
@@ -11871,9 +11871,9 @@ div#notebook {
                     <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="n">y</span><span class="p">],</span><span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
                     <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
                     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-        
+
                     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------------------------------------------------------------------------------------------------&#39;</span><span class="p">)</span>
-                    <span class="k">break</span>           
+                    <span class="k">break</span>
 </pre></div>
 
 </div>
@@ -12222,7 +12222,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>From Information in Data Description, we know that &lt;font color=blue&gt;['MSSubClass', 'MoSold','YrSold']&lt;/font&gt; are Categorical variables</strong><br>
+<p><strong>From Information in Data Description, we know that <font color=blue>['MSSubClass', 'MoSold','YrSold']</font> are Categorical variables</strong><br>
 <strong>However, they show up here as Numerical Variables.</strong><br>
 <strong>So, I converted them to String type</strong></p>
 
@@ -12244,7 +12244,7 @@ div#notebook {
 
 <span class="c1">#Year and month sold are transformed into categorical features.</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;YrSold&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;YrSold&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">&#39;MoSold&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">:</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">:</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span><span class="mi">6</span><span class="p">:</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span><span class="mi">7</span><span class="p">:</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span><span class="mi">9</span><span class="p">:</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">:</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> 
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">&#39;MoSold&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">:</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">:</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span><span class="mi">6</span><span class="p">:</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span><span class="mi">7</span><span class="p">:</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span><span class="mi">9</span><span class="p">:</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">:</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span>
                             <span class="mi">11</span><span class="p">:</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span><span class="mi">12</span><span class="p">:</span> <span class="s1">&#39;Dec&#39;</span><span class="p">}})</span>
 </pre></div>
 
@@ -14833,7 +14833,7 @@ EEIIETwqWgkhhBBCiOBR0UoIIYQQQgSPilZCCCGEECJ4/weT0osOxc+7TAAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>The Housing Price(SalePrice) correlates strongly with the list of features.</strong><br>
-<strong>&lt;font color=blue&gt;['TotalSF','OverallQual', 'GrLivArea', 'GarageCars', 'GarageArea','TotalBsmtSF', '1stFlrSF', 'FullBath', 'TotRmsAbvGrd', 'YearBuilt']&lt;/font&gt;</strong> <br>
+<strong><font color=blue>['TotalSF','OverallQual', 'GrLivArea', 'GarageCars', 'GarageArea','TotalBsmtSF', '1stFlrSF', 'FullBath', 'TotRmsAbvGrd', 'YearBuilt']</font></strong> <br>
 <strong>But there is strong correlation among some of the features itself.</strong></p>
 
 </div>
@@ -14880,16 +14880,16 @@ EEIIETwqWgkhhBBCiOBR0UoIIYQQQgSPilZCCCGEECJ4/weT0osOxc+7TAAAAABJRU5ErkJggg==
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">LabelEncoder</span>
 
-<span class="n">cols</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;FireplaceQu&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtQual&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtCond&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageQual&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageCond&#39;</span><span class="p">,</span> 
-        <span class="s1">&#39;ExterQual&#39;</span><span class="p">,</span> <span class="s1">&#39;ExterCond&#39;</span><span class="p">,</span><span class="s1">&#39;HeatingQC&#39;</span><span class="p">,</span> <span class="s1">&#39;KitchenQual&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtFinType1&#39;</span><span class="p">,</span> 
-        <span class="s1">&#39;BsmtFinType2&#39;</span><span class="p">,</span> <span class="s1">&#39;Functional&#39;</span><span class="p">,</span> <span class="s1">&#39;Fence&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtExposure&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageFinish&#39;</span><span class="p">,</span> 
+<span class="n">cols</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;FireplaceQu&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtQual&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtCond&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageQual&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageCond&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ExterQual&#39;</span><span class="p">,</span> <span class="s1">&#39;ExterCond&#39;</span><span class="p">,</span><span class="s1">&#39;HeatingQC&#39;</span><span class="p">,</span> <span class="s1">&#39;KitchenQual&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtFinType1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;BsmtFinType2&#39;</span><span class="p">,</span> <span class="s1">&#39;Functional&#39;</span><span class="p">,</span> <span class="s1">&#39;Fence&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtExposure&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageFinish&#39;</span><span class="p">,</span>
         <span class="s1">&#39;PavedDrive&#39;</span><span class="p">,</span><span class="s1">&#39;PoolQC&#39;</span><span class="p">,</span><span class="s1">&#39;Utilities&#39;</span><span class="p">,</span><span class="s1">&#39;OverallCond&#39;</span><span class="p">)</span>
 
 <span class="c1"># process columns, apply LabelEncoder to categorical features</span>
 
 <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
-    <span class="n">lbl</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span> 
-    <span class="n">lbl</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">))</span> 
+    <span class="n">lbl</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+    <span class="n">lbl</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
     <span class="n">df</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">lbl</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
 
 <span class="c1"># shape        </span>
@@ -14937,7 +14937,7 @@ EEIIETwqWgkhhBBCiOBR0UoIIYQQQgSPilZCCCGEECJ4/weT0osOxc+7TAAAAABJRU5ErkJggg==
 <span class="s2">&quot;Condition1&quot;</span><span class="p">,</span><span class="s2">&quot;Condition2&quot;</span><span class="p">,</span><span class="s2">&quot;Electrical&quot;</span><span class="p">,</span><span class="s2">&quot;Exterior1st&quot;</span><span class="p">,</span><span class="s2">&quot;Exterior2nd&quot;</span><span class="p">,</span><span class="s2">&quot;Foundation&quot;</span><span class="p">,</span>
 <span class="s2">&quot;GarageType&quot;</span><span class="p">,</span><span class="s2">&quot;Heating&quot;</span><span class="p">,</span><span class="s2">&quot;HouseStyle&quot;</span><span class="p">,</span><span class="s2">&quot;LandContour&quot;</span><span class="p">,</span><span class="s2">&quot;LandSlope&quot;</span><span class="p">,</span><span class="s2">&quot;LotConfig&quot;</span><span class="p">,</span><span class="s2">&quot;LotShape&quot;</span><span class="p">,</span>
 <span class="s2">&quot;MSZoning&quot;</span><span class="p">,</span><span class="s2">&quot;MasVnrType&quot;</span><span class="p">,</span><span class="s2">&quot;MiscFeature&quot;</span><span class="p">,</span><span class="s2">&quot;Neighborhood&quot;</span><span class="p">,</span><span class="s2">&quot;RoofMatl&quot;</span><span class="p">,</span><span class="s2">&quot;RoofStyle&quot;</span><span class="p">,</span>
-<span class="s2">&quot;SaleCondition&quot;</span><span class="p">,</span><span class="s2">&quot;SaleType&quot;</span><span class="p">,</span><span class="s2">&quot;Street&quot;</span><span class="p">,</span><span class="s2">&quot;MSSubClass&quot;</span><span class="p">,</span><span class="s2">&quot;MoSold&quot;</span><span class="p">,</span><span class="s2">&quot;YrSold&quot;</span><span class="p">],</span><span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+<span class="s2">&quot;SaleCondition&quot;</span><span class="p">,</span><span class="s2">&quot;SaleType&quot;</span><span class="p">,</span><span class="s2">&quot;Street&quot;</span><span class="p">,</span><span class="s2">&quot;MSSubClass&quot;</span><span class="p">,</span><span class="s2">&quot;MoSold&quot;</span><span class="p">,</span><span class="s2">&quot;YrSold&quot;</span><span class="p">],</span><span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -22051,7 +22051,7 @@ SYcQQgghSoUkHUIIIYQoFZJ0CCGEEKJU/D+7fD/B2sbSJQAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>I noticed that SalePrice feature has a positive skewnes(right skewed).</strong><br>
+<p><strong>I noticed that SalePrice feature has a positive skewness(right skewed).</strong><br>
 <strong>Since linear regression models usually perform better on normally distributed data,I transformed this distribution to a normal one.</strong><br>
 <strong>I did this by taking the log of the data</strong></p>
 
@@ -26402,7 +26402,7 @@ REREEcIAjIiIiIiIKEIYgBEREREREUXI/weLIh5xmfjBWQAAAABJRU5ErkJggg==
 <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">num_var</span><span class="p">:</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
     <span class="n">sk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-    
+
 <span class="n">Skewness</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;features&#39;</span><span class="p">:</span><span class="n">num_var</span><span class="p">,</span><span class="s1">&#39;skewness&#39;</span><span class="p">:</span><span class="n">sk</span><span class="p">})</span>
 <span class="n">Skewness</span> <span class="o">=</span> <span class="n">Skewness</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">Skewness</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;skewness&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -27777,7 +27777,7 @@ JyIiIiIiUkoogRMRERERESkllMCJiIiIiIiUEkrgRERERERESgklcCIiIiIiIqWEEjgREREREZFS
 <span class="nb">len</span><span class="p">(</span><span class="n">sk</span><span class="p">)</span>
 <span class="n">Skewness</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;features&#39;</span><span class="p">:</span><span class="n">num_var</span><span class="p">,</span><span class="s1">&#39;skewness&#39;</span><span class="p">:</span><span class="n">sk</span><span class="p">})</span>
 <span class="n">Skewness</span> <span class="o">=</span> <span class="n">Skewness</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">Skewness</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;skewness&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+<span class="n">Skewness</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;skewness&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">f</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;skewness&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Skewness</span><span class="p">,</span><span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">114</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">178</span><span class="o">/</span><span class="mi">255</span><span class="p">],</span><span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
 
@@ -29116,7 +29116,7 @@ QmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>I left filling the missing values of&lt;font color=blue&gt; "LotFrontage" &lt;/font&gt; from the Data Cleaning part</strong><br>
+<p><strong>I had left filling of the missing values for<font color=blue>"LotFrontage"</font> from the Data Cleaning part</strong><br>
 <strong>Now that I have all the variables cleaned, I can predict missing LotFrontage data using Linear Regression</strong></p>
 
 </div>
@@ -29147,7 +29147,7 @@ QmCC
 <span class="n">train_LotF</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
 <span class="n">test_LotF</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
 <span class="n">Y_train_LotF</span> <span class="o">=</span> <span class="n">train_LotF</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span>
-<span class="n">X_train_LotF</span> <span class="o">=</span> <span class="n">train_LotF</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">X_train_LotF</span> <span class="o">=</span> <span class="n">train_LotF</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Y_train_LotF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">Y_train_LotF</span><span class="p">)</span>  <span class="c1"># Log transform the LotF data</span>
 <span class="n">X_train_LotF</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">Y_train_LotF</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
@@ -29293,7 +29293,7 @@ QmCC
   </div>
 </body>
 
- 
+
 
 
 </html>
